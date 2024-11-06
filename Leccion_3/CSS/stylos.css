@@ -1,0 +1,17 @@
+
+h1{
+    color: rgb(56, 93, 204);
+    text-align: center;
+}
+p{
+    color:rgb(47, 77, 95) ;
+    background-color:#EDE8DC; 
+    /* afecta la altura y el ancho dentro del elemento */
+    padding:  10px; 
+    /*es una manera de resaltar elementos es el borde   */
+    border: 10px solid #A5B68D;
+    /* afecta la altura y el ancho fuera del elemento top, right, botton, left */
+    margin: 40px 20px 20px 10px;
+    /* centrar texto */
+    text-align: center;
+}
