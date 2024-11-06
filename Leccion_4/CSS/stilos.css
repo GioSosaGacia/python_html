@@ -1,27 +1,54 @@
 h1{
-    color: #f07167;
+    color: #5606ad;
 }
 
-a:link{
+/* podemos agregar varios eventos seprados por ,  */
+a:link, a:visited{
+    background-color: #b51793;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active{
+    background-color: #f72585;
+    
+}
+p{
+    padding: 5px;
+    border: solid #5606ad;
+    background-color: rgb(235, 225, 225);
+}
+
+
+
+
+
+
+
+
+/* a:link{
     color:#fb8500 ;
     text-decoration: none;
-}
+} */
 
-/* link visitado */
-a:visited{
+/* link visitado y cambia de color */
+/* a:visited{
     color: #219ebc;
     /* quitar el subrayado del texto */
-    text-decoration: none;
-}
-/* cuando nos ponemos encima del link */
-a:hover{
-    color: #8ecae6;
+    /* text-decoration: none;
+} */
+/* cuando nos ponemos encima del link cambia de color */
+/* a:hover{ */
+    /* color: #8ecae6; */
     /* para que lo subraye */
-    text-decoration: underline;
-}
+    /* text-decoration: underline;
+} */ 
 
-/* al dar click en el link */
-a:active{
+/* al dar click en el link cambia el color y lo subraya */
+/* a:active{
     color: #023047;
     text-decoration: underline;
-}
+} */
