@@ -1,0 +1,34 @@
+table{
+    width: 100%;
+}
+caption{
+    color: #e63946;
+    font-family: 'Trocchi', serif;
+    font-size: 30px;
+    /* establece la altura entre las lineas de texto */
+    line-height: 70px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    /* edita el dorde de la tabla, lo comun es tener colapsado el borde */
+    border-collapse: collapse;
+    /* border-spacing: 5px; */
+    padding: 5px;
+}
+
+th{
+    color: #f1faee;
+    background-color: #1d3557;
+}
+/* modificar los renglones con nth-child(even) paraes even-> par, odd-> impar */
+tr:nth-child(even) {
+    background-color: #f1faee;
+}
+tr:nth-child(odd){
+    background-color: #a8dadc;
+}
+
+/* td{
+    text-align: center;
+} */
