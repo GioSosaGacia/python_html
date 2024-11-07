@@ -1,0 +1,39 @@
+/* con el * indicamos que todos los elementos que incluyan estas propiedades esten en 0*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/* identificador css, no se deben de repetir los identificadores*/
+#titulo_principal{
+    color: #f72585;
+    text-align: center;
+    margin: 15px;
+}
+
+h2{
+    color: #3f37c9;
+}
+
+p{
+    color: #457b9d;
+}
+
+/* Indica que se esta usando la clase tarjeta y al inicio va el punto .
+se le conoce como clase de css */
+/* clase */
+.tarjeta{
+    border: 10px solid #560bad;
+    background-color: #f1faee;
+    text-align: center;
+    margin: 10px 115px;
+    padding: 15px;
+}
+
+.titulo{
+    color: #f72585;
+}
+
+h1{
+    color: rgb(4, 78, 78);
+}
+/* class */

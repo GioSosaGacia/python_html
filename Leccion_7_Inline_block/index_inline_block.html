@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos en linea y bloque</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <!-- class attribute is used to specify a class for an
+      HTML element. Multiple HTML elements can share the same class. -->
+    <!-- si queremos agregar mas de una clase solo damos espacio y el nombre de la otra clase -->
+    <!-- si vamos a utilizar un elemento con "id" en css debe de ser unico -->
+    <h1 id="titulo_principal">Lenguajes de programación</h1>
+    <hr>
+    <br>
+    <h2>Marcadores o Bookmarks</h2>
+    <!-- bookmark -->
+    <a href="#Java">Java</a> |
+    <a href="#Python">Python</a> |
+    <a href="#JS">JavaScript</a>
+    <div class="tarjeta">
+        <!-- Usamos el id para ligarlo a un a o ancla que sirve como bookmark
+         nos lleva a un link en especifico  -->
+        <h2 id="Java">Java</h2>
+        <p><span class="titulo">Creador:</span> James Gossling</p>
+    </div>
+    <div class="tarjeta">
+        <h2 id="Python">Python</h2>
+        <p><span class="titulo">Creador:</span> Guido van Rossum</p>
+    </div>
+    <div class="tarjeta">
+        <h2 id="JS">JavaScript</h2>
+        <p><span class="titulo">Creador:</span> Brendan Eich</p>
+    </div>
+    <div>
+        <h2>Resumen Lenguajes de Progrmacion</h2>
+        <p>www.globalmentoring.com.mx</p>
+    </div>
+    
+
+
+   
+
+
+
+
+
+     <hr>
+     <br>
+    <!-- en linea con span y bloque con div  -->
+    <h1>Elementos span(inline)</h1>
+    <p>Texto donde vamos a <span style="color: #e63946; border: 1px solid black;">enfatizar</span> y cambiar el 
+        <span style="color: #457b9d; font-weight: bold;">color de algunos Elementos</span></p>
+    <h1>Elementos div(bloque)</h1>
+    <!-- se utiliza para crear nuevas diviciones o nuevos bloques -->
+    <div>
+        <h2>Titulo del div</h2>
+        <p>Texto dentro del div</p>
+    </div>
+    <p>Texto fuera del div</p>
+    
+</body>
+</html>
