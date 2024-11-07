@@ -1,0 +1,21 @@
+ol{
+    list-style: none;
+    /* resetea el contador */
+    counter-reset: contador;
+}
+
+/* incrementa el contador */
+ol li{
+    counter-increment: contador;
+}
+
+/* :: = selector before agrega un texto antes, counter cuanta el elemento antes de cada marca*/
+ol li::before{
+    content: 'Marca ' counter(contador) ') ';
+    color: #ff6f00;
+}
+
+/* agregar un texto despues, los :: indica que es un selector */
+ol li::after{
+    content: '.';
+}
