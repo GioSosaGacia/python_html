@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <!--Formularios, etiquetas, input, casillas, botones, permiten capturar inf, etc   -->
+    <h1>Formularios en HTML</h1>
+    <!-- opciones para evitar la validacion de un formulario, 1.usando novalidate dentro del formulario  <form novalidate>
+     2.agregando un boton con la funcion formnovalidate -->
+    <!-- Un forulario por defecto usa el metodo get-> muestra todos los datos en el mismo url, unico detalle es que si usamos un campo de password lo mostrara en el url -->
+    <!-- Para evitar el error del get, usamos post para que la inf no se vizualice  -->
+
+    <!-- atributos de form
+     action="mi_servidor" permite procesar una url o el servidor que utilizará , _self: indica que la respuesta se vea dentro de la misma 
+     ventana es la variable por default y blank  en una nueva ventana
+     autocomplete ya esta por defaul activo en on y ya no es necesario agregarlo-->
+    <form action="mi_pagina" method="POST" target="_self" autocomplete="on">
+        <!-- despues del form usamos el fielset, agrega un marco a nuestro formulario -->
+        <fieldset>
+            <!-- legend agrega un titulo a nuestro formulario -->
+            <legend>Datos persona:</legend>
+
+            <!-- PARAMETROS DE solo lectura, con disable se desactiva pero no manda datos al servidor-->
+            <label for="idPersona">Persona</label><br>
+            <input type="text" id="idPersona" name="idPersona" readonly="true" disabled="true" value="1"><br>
+
+            <!-- Parametros ocultos, envia inf que solo puede ver el servidor -->
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
+
+            <!-- label es una etiqueta para la caja de texto -->
+            <!-- for relaciona la etiqueta con el input mediante el id del input -->
+            <label for="nombre">Nombre:</label><br>
+            <!-- type para indicar el tipo de dato, se recomienda agregar id -->
+            <!-- value(envia un valor por default), se utiliza para cargar los datos de lado del servidor o visualizar la info en los input value="Giovanni" -->
+            <!-- Tambien se deben de enviar los parametro de lado de la url agregando name, se recomiendo que id y name tengan el mismo parametro o argumento -->
+            <!-- placeholder se utiliza para resaltar la informacion que se debe de ingresar al input, es como una pista-->
+            <!-- required indica que un campo es requerido y si esta vacio envia una alerta -->
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu Nombre" required="true"><br>
+
+            <label for="apellido">Apellido</label><br>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tu Apellido" required="true"><br>
+
+            <!-- <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Escribe tu password" required="true"><br> -->
+
+            <label for="email">Email:</label><br>
+            <!-- step='any' permite agregar decimales o cualquier tipo de valor numerico  -->
+            <input type="email" id="email" name="email" step="any"><br>
+
+            <!-- 1.para conectar un label con un input, el label usa for y el input id 
+                2.El name define el nombre del dato que se enviará al servidor cuando se envíe el formulario
+                3.atributo value define el valor que se enviará al servidor cuando el formulario se envíe, y 
+                se usa para varios tipos de entrada. -->
+            <label for="edad">Edad</label><br>
+            <input type="number" id="edad" name="edad"><br>
+
+            <label >Género</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino">Femenino</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculio">
+            <label for="masculio">Masculino</label><br>
+
+            <label>Género de Música Favorita</label><br>
+            <input type="checkbox" id="clasica" name="musica", value="clasica">
+            <label for="clasica">Clásica</label><br>
+            <input type="checkbox" id="reggaeton" name="musica", value="reggaeton">
+            <label for="reggaeton">Reggaeton</label><br>
+            <input type="checkbox" id="rock" name="musica", value="rock">
+            <label for="rock">Rock</label><br>
+            <input type="checkbox" id="bachata" name="musica", value="bachata">
+            <label for="bachata">Bachata</label><br>
+
+            <!-- Elementos de tipo select -->
+            <label for="autos">Marca auto favorita:</label><br>
+            <!-- multiple selecciona mas de 1 elemento -->
+            <select name="autos" id="autos" multiple="true">
+                <!-- para seleccionar el auto deseado -->
+                <option value="volvo">Volvo</option>
+                <option value="ford">Ford</option>
+                <!-- selected seleccion predefinida -->
+                <option value="kia" selected="true">Kia</option>
+                <option value="fiat">Fiat</option>
+                <option value="dodge">Dodge</option>
+            </select><br>
+
+            <!-- textarea -->
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="comentario" rows="4" cols="30">Este es mi comentario:  </textarea><br>
+
+
+            <!-- submit indica que enviara inf, value->agrega un titulo al boton -->
+            <input type="submit" value="Enviar">
+            <input type="submit" formnovalidate="formnovalidate" value="Enviar sin validación">
+            <!-- reset: reinicia los valores del formulario -->
+            <input type="reset" value="Restablecer">
+    
+        </fieldset>
+    </form>
+    
+</body>
+</html>
