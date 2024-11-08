@@ -1,0 +1,49 @@
+/* como son etiquetas semanticas no reuqiere de agregar class o id */
+header{
+    color: #D9E997;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav{
+    width: 20%;
+    /* con esto se cargo a la izquierda */
+    float: left;
+}
+nav a{
+    background-color: #D9E997;
+    border-radius: 10px 0 10px 0;
+    color: ;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    /* convertirlos a tipo bloque */
+    display: block;
+}
+section{
+    float: right;
+    width: 75%;
+    color: #D9E997;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    box-shadow: 1px 0 4px rgb(0,0,0,.2);
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+    color: #4361ee;
+    box-shadow: inset 5px 0 5px -5px #4895ef;
+}
+
+footer{
+    /* Limpiamos tanto lo que este a la izq o der y se posiciona en la siguiente linea */
+    clear: both;
+    padding: 1px;
+    text-align: center;
+}
