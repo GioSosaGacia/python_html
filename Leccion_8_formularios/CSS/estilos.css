@@ -1,3 +1,56 @@
-h1{
-    color: blue;
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* gradiente se usa raadial o lieal se usa para el background */
+    background: linear-gradient(#a5c593, #52624a);
+}
+
+.contenedor{
+    margin: 50px auto;
+    width: 400px;
+    padding: 30px;
+    /* .5 es 50% de transparencia */
+    background: rgba(206, 246, 184, .1) ;
+    /* para redondiar las esquinas */
+    border-radius: 10px;
+}
+
+.contenedor h2{
+    margin: 0 0 30px;
+    padding: 0;
+    font-size: 30px;
+    color: #293125;
+    text-align: center;
+}
+
+/* clase del formulario y la clase del div */
+.contenedor .elemento label{
+    color: #293125;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenedor .elemento input{
+    width: 100%;
+    padding: 10px 0;
+    color: #293125;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #293125;
+    margin-bottom: 30px;
+}
+
+.contenedor .elemento input[type="submit"]{
+    background-color: #c6e4b8;
+    border-radius: 10px;
+    border-bottom: none;
+    letter-spacing: 5px;
+    /* convertir a mayusculas */
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15;
+    margin-top: 30px;
+
 }
