@@ -1,6 +1,9 @@
 /* como son etiquetas semanticas no reuqiere de agregar class o id */
+body{
+    background-color: #f7f7f7;
+}
 header{
-    color: #D9E997;
+    color: #bbdb3c;
     text-align: center;
     font-size: 20px;
 }
@@ -13,7 +16,7 @@ nav{
 nav a{
     background-color: #D9E997;
     border-radius: 10px 0 10px 0;
-    color: ;
+    color: black;
     margin: 10px;
     padding: 10px;
     text-decoration: none;
